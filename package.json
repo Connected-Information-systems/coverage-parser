@@ -1,0 +1,36 @@
+{
+  "name": "@connectis/coverage-parser",
+  "version": "1.0.0",
+  "description": "Library for parsing coverage reports.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "coverage",
+    "parse",
+    "parser",
+    "test",
+    "lcov",
+    "jacoco",
+    "cobertura",
+    "clover",
+    "golang"
+  ],
+  "author": "Connected Information Systems B.V. (https://connectis.com/)",
+  "license": "MIT",
+  "repository": "github:Connected-Information-systems/coverage-parser",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@cvrg-report/clover-json": "^0.1.0",
+    "@cvrg-report/golang-cover-json": "^0.1.0",
+    "bluebird": "^3.5.2",
+    "cobertura-parse": "^1.0.5",
+    "fast-glob": "^2.2.3",
+    "jacoco-parse": "^2.0.0",
+    "lcov-parse": "^1.0.0",
+    "lodash": "^4.17.11"
+  }
+}
