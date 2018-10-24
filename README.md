@@ -54,9 +54,9 @@ The base directory that will be used for making paths relative or absolute in th
 Finds all coverage reports matching the glob patterns and parses the results.
 
 #### globs
-Type: `Array<string>`
+Type: `Array<string>|string`
 
-An array of [glob patterns](https://www.npmjs.com/package/fast-glob).
+Either an of [glob patterns](https://www.npmjs.com/package/fast-glob) or a single glob pattern.
 
 #### options
 Type: `options`. See above.
