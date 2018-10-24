@@ -11,6 +11,18 @@ Supported coverage report formats:
 - [jacoco](https://www.npmjs.com/package/jacoco-parse)
 - [golang-cover](https://www.npmjs.com/package/@cvrg-report/golang-cover-json)
 
+## Example
+```js
+const coverageParser = require('@connectis/coverage-parser');
+
+coverageParser
+    .parseGlobs('**/lcov.info', {
+        type: 'lcov'
+    })
+    .then(results => console.log(results));
+```
+
+
 ## API
 The API includes the following:
 - parseGlobs(globs, options)
@@ -64,7 +76,7 @@ Type: `options`. See above.
 ##### options.globOptions
 Type: `object`
 
-Options to pass to [fast-glob]((https://www.npmjs.com/package/fast-glob)).
+Options to pass to [fast-glob](https://www.npmjs.com/package/fast-glob).
 
 #### returns
 Type: `Promise<Array<CoverageResult>>`. See below.
