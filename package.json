@@ -1,6 +1,6 @@
 {
   "name": "@connectis/coverage-parser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Library for parsing coverage reports.",
   "main": "index.js",
   "scripts": {

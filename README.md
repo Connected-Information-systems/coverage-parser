@@ -113,50 +113,65 @@ Type: `Promise<Array<CoverageResult>>`. See below.
 The returned data has the following format.
 
 ``` json
- {
-    "title": "Test #1",
-    "file": "/some/absolute/path/anim-base/anim-base-coverage.js",
-    "functions": {
-      "hit": 23,
-      "found": 29,
-      "details": [
-        {
-          "name": "(anonymous 1)",
-          "line": 7,
-          "hit": 6
-        },
-        {
-          "name": "(anonymous 2)",
-          "line": 620,
-          "hit": 225
-        },
-        {
-          "name": "_end",
-          "line": 516,
-          "hit": 228
-        }
-      ]
-    }
-    "lines": {
-      "found": 181,
-      "hit": 143,
-      "details": [
-        {
-          "line": 7,
-          "hit": 6
-        },
-        {
-          "line": 29,
-          "hit": 6
-        },
-        {
-          "line": 41,
-          "hit": 0
-        }        
-      ]
-    }
+{
+  "title": "Test #1",
+  "file": "/some/absolute/path/anim-base/anim-base-coverage.js",
+  "functions": {
+    "hit": 23,
+    "found": 29,
+    "details": [
+      {
+        "name": "(anonymous 1)",
+        "line": 7,
+        "hit": 6
+      },
+      {
+        "name": "(anonymous 2)",
+        "line": 620,
+        "hit": 225
+      },
+      {
+        "name": "_end",
+        "line": 516,
+        "hit": 228
+      }
+    ]
+  },
+  "lines": {
+    "found": 181,
+    "hit": 143,
+    "details": [
+      {
+        "line": 7,
+        "hit": 6
+      },
+      {
+        "line": 29,
+        "hit": 6
+      },
+      {
+        "line": 41,
+        "hit": 0
+      }
+    ]
+  },
+  "branches": {
+    "found": 2,
+    "hit": 1,
+    "details": [
+      {
+        "line": 9,
+        "branch": 0,
+        "taken": 0
+      },
+      {
+        "line": 9,
+        "branch": 1,
+        "taken": 1
+      }
+    ]
+  }
 }
-
 ```
 
 [npm-url]: https://www.npmjs.org/package/@connectis/coverage-parser
