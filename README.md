@@ -11,6 +11,8 @@ Supported coverage report formats:
 - [jacoco](https://www.npmjs.com/package/jacoco-parse)
 - [golang-cover](https://www.npmjs.com/package/@cvrg-report/golang-cover-json)
 
+Note: if you want to merge the parsed results you can use [@connectis/coverage-merger](https://github.com/Connected-Information-systems/coverage-merger).
+
 ## Example
 ```js
 const coverageParser = require('@connectis/coverage-parser');
